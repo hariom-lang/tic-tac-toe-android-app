@@ -16,7 +16,8 @@
             android:name=".AddPlayer"
             android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.TicTacToe">
+            android:theme="@style/Theme.TicTacToe"
+            tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +27,8 @@
         <!-- ResultDialog Activity -->
         <activity
             android:name=".ResultDialog"
-            android:exported="false" /> <!-- MainActivity (Not Launcher anymore) -->
+            android:exported="false"
+            tools:ignore="Instantiatable" /> <!-- MainActivity (Not Launcher anymore) -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
